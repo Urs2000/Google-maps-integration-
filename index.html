@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps API for GetSociable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuSSGCYIG_1EexYVOJxgl2wFiae8wZcJA&libraries=places"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Google Maps API for GetSociable</h1>
+    </header>
+    <main>
+        <section>
+            <label for="origin">Enter Origin Address:</label>
+            <input type="text" id="origin" placeholder="Enter origin address">
+            <button onclick="getOrigin()">Submit</button>
+        </section>
+        <section id="map"></section>
+        <section id="coordinates"></section>
+        <section id="places"></section>
+        <section>
+            <label for="destination">Enter Destination Address:</label>
+            <input type="text" id="destination" placeholder="Enter destination address">
+            <button onclick="getDestination()">Submit</button>
+        </section>
+        <section id="distance"></section>
+        <section id="directions"></section>
+    </main>
+</body>
+</html>
